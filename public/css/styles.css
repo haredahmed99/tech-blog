@@ -1,0 +1,41 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+html, body {
+   height:100%;
+}
+nav {
+    opacity: 0.9;
+}
+
+body{
+    /* background-image: url('../assets/vegetables\ copy.jpg');  */
+    min-height:300vh;
+    max-height: 100,000vh;
+    background-size:cover;
+    margin:0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+} 
+
+
+.bulma-overlay-mixin{
+    opacity: 0.9;
+}
+
+.card {
+    opacity: 0.9;
+    margin: 1.5rem;
+}
+
+.box {
+    opacity: 0.9;
+}
+
+#homepage {
+    max-width: 768px;
+}
+
+
+
+

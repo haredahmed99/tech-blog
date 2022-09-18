@@ -1,0 +1,24 @@
+<div class="px-4 is-flex-direction-column columns project-list">
+  {{#each blogs as |blog| }}
+    <div class="card column column-gap is-vcentered" data-card-id={{blog.id}}>
+      <div data-card-id={{blog.id}}>
+        <div class="level" data-card-id={{blog.id}}>
+          <p class="py-4 has-text-weight-bold" data-card-id={{blog.id}}>{{blog.title}}</p>
+          <p data-card-id={{blog.id}}>Posted by {{blog.user.name}} on {{ format_date blog.date_created }}</p>
+        </div>
+        <p class="py-4" data-card-id={{blog.id}}>{{blog.content}}</p> 
+      </div>
+    </div>
+  {{/each}}
+</div>
+   
+<div class="content has-text-centered">
+  <a href="/add-post">
+    <button class="button is-primary is-light" id="add-recipe">Add Post</button>
+  </a>
+</div>
+
+<script src="./../js/homepage.js"></script>
+
+
+

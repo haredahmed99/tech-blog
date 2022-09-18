@@ -1,0 +1,21 @@
+<div class="px-4 is-flex-direction-column columns post-list">
+  {{#each blogs as |blog| }}
+    <div class="card column column-gap is-vcentered" data-card-id={{blog.id}}>
+      <div data-card-id={{blog.id}}>
+        <div class="level" data-card-id={{blog.id}}>
+          <p class="py-4 has-text-weight-bold" data-card-id={{blog.id}}>{{blog.title}}</p>
+          <div class="level">
+            <p class='px-4' data-card-id={{blog.id}}> Posted on {{format_date blog.date_created}}</p>
+            <button type="submit" class="button is-danger" data-id={{blog.id}}>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<div class="content has-text-centered">
+ <a href="/add-post"><button class="button is-primary is-light">Add Post</button></a>
+</div>
+    
+<script src="./js/profilehandlers.js"></script>
